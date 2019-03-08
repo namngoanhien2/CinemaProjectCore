@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="org.hibernate.tutorial.jpa" transaction-type="RESOURCE_LOCAL">
+        <class>entity.Actor</class>
+        <class>entity.Auditorium</class>
+        <class>entity.Category</class>
+        <class>entity.Cinema</class>
+        <class>entity.Directors</class>
+        <class>entity.Movie</class>
+        <class>entity.Seat</class>
+        <class>entity.Showtime</class>
+        <class>entity.Ticket</class>
+        <class>entity.User</class>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/cenima" />
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="" />
+            <property name="hibernate.hbm2ddl.auto" value="create" />
+            <property name="toplink.jdbc.url" value="jdbc:mysql://localhost:3306/cenima"/>
+            <property name="toplink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/cenima"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:mysql://localhost:3306/cenima"/>
+            <property name="openjpa.ConnectionDriverName" value="com.mysql.jdbc.Driver"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306/cenima"/>
+            <property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+        </properties>
+    </persistence-unit>
+</persistence>
